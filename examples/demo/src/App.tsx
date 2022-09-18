@@ -14,7 +14,9 @@ import orders from './orders';
 import products from './products';
 import invoices from './invoices';
 import categories from './categories';
-import reviews from './reviews';
+// import reviews from './reviews';
+// import reviewsWithTabbedStatus from './reviews/reviewsWithTabbedStatus';
+import reviewsWithTabbedStar from './reviews/reviewsWithTabbedStar';
 import dataProviderFactory from './dataProvider';
 import Configuration from './configuration/Configuration';
 import Segments from './segments/Segments';
@@ -56,7 +58,7 @@ const App = () => {
             <Resource name="invoices" {...invoices} />
             <Resource name="products" {...products} />
             <Resource name="categories" {...categories} />
-            <Resource name="reviews" {...reviews} />
+            <Resource name="reviews" {...reviewsWithTabbedStar} />
         </Admin>
     );
 };
